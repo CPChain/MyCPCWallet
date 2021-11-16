@@ -1,23 +1,14 @@
-import { ETC, ETH, ROP } from '@/utils/networks/types';
-import {
-  ledgerEthereum,
-  ledgerLiveEthereum,
-  ledgerEthereumClassic,
-  ledgerLiveEthereumClassic,
-  ropsten
-} from '@/modules/access-wallet/hardware/handlers/configs/configPaths';
+import { CPC } from '@/utils/networks/types';
+
+const cpcMainnet = {
+  path: "m/44'/337'/0'/0",
+  label: 'CPChain Mainnet'
+};
+
 const appList = [
   {
-    network: ETH,
-    paths: [ledgerEthereum, ledgerLiveEthereum]
-  },
-  {
-    network: ETC,
-    paths: [ledgerEthereumClassic, ledgerLiveEthereumClassic]
-  },
-  {
-    network: ROP,
-    paths: [ropsten]
+    network: CPC,
+    paths: [cpcMainnet]
   }
 ];
 export default appList;

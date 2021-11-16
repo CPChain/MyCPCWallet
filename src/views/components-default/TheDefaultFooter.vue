@@ -2,7 +2,7 @@
   <div class="mew-component--home-footer titlePrimary--text">
     <div class="desktop-content d-none d-lg-block">
       <v-container class="pt-12 pb-6">
-        <v-row>
+        <!-- <v-row>
           <v-col v-for="(f, fkey) in footers" :key="fkey" cols="3">
             <div class="subtitle-1 font-weight-bold mb-1">{{ f.title }}</div>
             <v-list>
@@ -64,14 +64,14 @@
               </div>
             </a>
           </v-col>
-        </v-row>
+        </v-row> -->
         <div class="d-flex align-center justify-space-between mt-12">
           <div class="d-flex align-center mx-n6">
             <div class="d-flex align-center line-height-small">
               <div class="px-6 border-right">
                 <a
                   class="color--inherit"
-                  href="mailto:support@myetherwallet.com"
+                  href="mailto:info@cpchain.io"
                   target="_blank"
                 >
                   Feedback
@@ -89,7 +89,7 @@
               </div>
             </div>
           </div>
-          <div v-if="displayedTrackingPopup" class="matomo-tracking-switch">
+          <!-- <div v-if="displayedTrackingPopup" class="matomo-tracking-switch">
             <v-switch
               :input-value="consentToTrack"
               inset
@@ -98,7 +98,7 @@
               off-icon="mdi-alert-circle"
               @change="setConsent"
             />
-          </div>
+          </div> -->
           <div class="social-icons d-flex align-center">
             <a
               v-for="(i, key) in socialIcons"
@@ -124,7 +124,7 @@
             <p class="cyan--text text--lighten-3 ma-0">v{{ version }}</p>
             <v-spacer />
             <p class="teal--text text--lighten-1 ma-0">
-              ©2021 MyEtherWallet. All rights reserved. Pricing taken from
+              ©2022 CPChain Web Wallet. All rights reserved. Pricing taken from
               <a
                 class="cyan--text text--lighten-3"
                 href="https://www.coingecko.com/en"
@@ -433,40 +433,40 @@ export default {
     //   }
     // ],
     socialIcons: [
+      // {
+      //   link: 'https://www.facebook.com/MyEtherWallet',
+      //   icon: 'facebook'
+      // },
       {
-        link: 'https://www.facebook.com/MyEtherWallet',
-        icon: 'facebook'
-      },
-      {
-        link: 'https://twitter.com/myetherwallet',
+        link: 'https://twitter.com/cpchain_io',
         icon: 'twitter'
       },
+      // {
+      //   link: 'https://www.instagram.com/myetherwallet/',
+      //   icon: 'instagram'
+      // },
+      // {
+      //   link: 'https://www.linkedin.com/company/myetherwallet',
+      //   icon: 'linkedin'
+      // },
       {
-        link: 'https://www.instagram.com/myetherwallet/',
-        icon: 'instagram'
-      },
-      {
-        link: 'https://www.linkedin.com/company/myetherwallet',
-        icon: 'linkedin'
-      },
-      {
-        link: 'https://github.com/myetherwallet',
+        link: 'https://github.com/cpchain',
         icon: 'github'
       },
       {
-        link: 'https://www.reddit.com/r/MyEtherWallet/',
+        link: 'https://www.reddit.com/r/CPChain_Official/',
         icon: 'reddit'
       },
       {
-        link: 'https://www.youtube.com/channel/UCQU5QbObwmaHNEMsuX3uQKA',
+        link: 'https://www.youtube.com/channel/UC7J-Rm-ZmO8kUjBAsdYj_xA',
         icon: 'youtube'
       },
       {
-        link: 'https://medium.com/@myetherwallet',
+        link: 'https://medium.com/cpchain-tech',
         icon: 'medium'
       },
       {
-        link: 'https://t.me/myetherwallet',
+        link: 'https://t.me/cpchain_official',
         iconImage: require('@/assets/images/icons/icon-telegram.svg')
       }
     ],

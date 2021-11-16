@@ -10,10 +10,10 @@
         "
       >
         <v-card color="transparent" flat tile max-width="430px">
-          <div class="white--text mew-title">Ethereum's Original Wallet</div>
+          <div class="white--text mew-title">CPChain's Web Wallet</div>
           <p class="white--text mt-3">
-            MEW (MyEtherWallet) is a free, client-side interface helping you
-            interact with the Ethereum blockchain. Our easy-to-use, open-source
+            CPChain Web Wallet is a free, client-side interface helping you
+            interact with the CPChain blockchain. Our easy-to-use, open-source
             platform allows you to generate wallets, interact with smart
             contracts, and so much more.
           </p>

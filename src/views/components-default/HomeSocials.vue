@@ -39,54 +39,54 @@ export default {
   components: {},
   data: () => ({
     socials: [
-      {
-        img: require('@/assets/images/icons/socials/facebook.png'),
-        link: 'https://www.facebook.com/MyEtherWallet',
-        label: 'Facebook'
-      },
+      // {
+      //   img: require('@/assets/images/icons/socials/facebook.png'),
+      //   link: 'https://www.facebook.com/MyEtherWallet',
+      //   label: 'Facebook'
+      // },
       {
         img: require('@/assets/images/icons/socials/twitter.png'),
-        link: 'https://twitter.com/myetherwallet',
+        link: 'https://twitter.com/cpchain_io',
         label: 'Twitter'
       },
       {
         img: require('@/assets/images/icons/socials/medium.png'),
-        link: 'https://medium.com/@myetherwallet',
+        link: 'https://medium.com/cpchain-tech',
         label: 'Medium'
       },
       {
         img: require('@/assets/images/icons/socials/reddit.png'),
-        link: 'https://www.reddit.com/r/MyEtherWallet/',
+        link: 'https://www.reddit.com/r/CPChain_Official/',
         label: 'Reddit'
       },
       {
         img: require('@/assets/images/icons/socials/github.png'),
-        link: 'https://github.com/myetherwallet',
+        link: 'https://github.com/cpchain',
         label: 'Github'
       },
-      {
-        img: require('@/assets/images/icons/socials/vkontakte.png'),
-        link: 'https://vk.com/public190491855',
-        label: 'Vkontakte'
-      },
+      // {
+      //   img: require('@/assets/images/icons/socials/vkontakte.png'),
+      //   link: 'https://vk.com/public190491855',
+      //   label: 'Vkontakte'
+      // },
       {
         img: require('@/assets/images/icons/socials/youtube.png'),
-        link: 'https://www.youtube.com/channel/UCQU5QbObwmaHNEMsuX3uQKA',
+        link: 'https://www.youtube.com/channel/UC7J-Rm-ZmO8kUjBAsdYj_xA',
         label: 'Youtube'
       },
-      {
-        img: require('@/assets/images/icons/socials/mewtopia.png'),
-        link: 'https://www.mewtopia.com/',
-        label: 'Mewtopia'
-      },
-      {
-        img: require('@/assets/images/icons/socials/instagram.png'),
-        link: 'https://www.instagram.com/myetherwallet/',
-        label: 'Instagram'
-      },
+      // {
+      //   img: require('@/assets/images/icons/socials/mewtopia.png'),
+      //   link: 'https://www.mewtopia.com/',
+      //   label: 'Mewtopia'
+      // },
+      // {
+      //   img: require('@/assets/images/icons/socials/instagram.png'),
+      //   link: 'https://www.instagram.com/myetherwallet/',
+      //   label: 'Instagram'
+      // },
       {
         img: require('@/assets/images/icons/socials/telegram.png'),
-        link: 'https://t.me/myetherwallet',
+        link: 'https://t.me/cpchain_official',
         label: 'Telegram'
       }
     ]

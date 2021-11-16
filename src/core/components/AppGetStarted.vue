@@ -5,13 +5,13 @@
       <v-container>
         <div class="d-flex align-center px-6">
           <div>
-            <h1 class="white--text mb-3">Ready to explore Ethereum?</h1>
+            <h1 class="white--text mb-3">Ready to explore CPChain?</h1>
             <div align="left" class="mt-5">
               <a
                 :href="
                   isMobile()
-                    ? 'https://apps.apple.com/app/id1464614025'
-                    : 'https://mewwallet.com'
+                    ? 'https://apps.apple.com/us/app/cpc-wallet/id1486125576'
+                    : 'https://cpchain.io/#/downloadApp'
                 "
                 target="_blank"
                 class="mr-1"
@@ -25,8 +25,8 @@
               <a
                 :href="
                   isMobile()
-                    ? 'https://play.google.com/store/apps/details?id=com.myetherwallet.mewwallet'
-                    : 'https://mewwallet.com'
+                    ? 'https://play.google.com/store/apps/details?id=com.cpcwallet'
+                    : 'https://cpchain.io/#/downloadApp'
                 "
                 target="_blank"
               >
@@ -71,7 +71,7 @@
       <v-container class="px-5">
         <v-sheet color="transparent" max-width="500px" class="mx-auto">
           <div class="mb-9">
-            <h1 class="white--text">Ready to explore Ethereum?</h1>
+            <h1 class="white--text">Ready to explore CPChain?</h1>
             <div align="left" class="mt-5">
               <a
                 :href="

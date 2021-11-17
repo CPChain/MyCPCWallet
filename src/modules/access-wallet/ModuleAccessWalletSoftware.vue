@@ -8,7 +8,7 @@
     :footer="{
       text: 'Need help?',
       linkTitle: 'Contact support',
-      link: 'mailto:support@myetherwallet.com'
+      link: 'mailto:info@cpchain.io'
     }"
     content-size="large"
     :show-overlay="open"

@@ -584,7 +584,7 @@
                 <div class="mt-3">
                   {{ $t('dappsSubmission.mew-support.info') }}
                 </div>
-                <a href="mailto:support@myetherwallet.com" target="_blank">
+                <a href="mailto:info@cpchain.io" target="_blank">
                   <mew-button
                     :title="$t('dappsSubmission.contact-support')"
                     has-full-width

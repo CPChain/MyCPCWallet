@@ -136,7 +136,7 @@
           <div class="subtitle-1 font-weight-bold grey--text">STEP 3.</div>
           <div class="headline font-weight-bold mb-3">You are done!</div>
           <p class="mb-6">
-            You are now ready to take advantage of all that Ethereum has to
+            You are now ready to take advantage of all that CPChain has to
             offer! Access with keystore file should only be used in an offline
             setting.
           </p>

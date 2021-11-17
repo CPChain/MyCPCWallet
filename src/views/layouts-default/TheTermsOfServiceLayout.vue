@@ -329,7 +329,7 @@
               <i18n path="termsOfService.contact-info-title-p" tag="p">
                 <template #suppEmail>
                   <a
-                    href="mailto:support@myetherwallet.com"
+                    href="mailto:info@cpchain.io"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -246,7 +246,7 @@
               <div class="px-2 px-lg-6 border-right">
                 <a
                   class="color--inherit"
-                  href="mailto:support@myetherwallet.com"
+                  href="mailto:info@cpchain.io"
                   target="_blank"
                 >
                   Feedback
@@ -351,7 +351,7 @@ export default {
           { label: 'Help center', link: 'https://help.myetherwallet.com/en/' },
           {
             label: 'Customer support',
-            link: 'mailto:support@myetherwallet.com'
+            link: 'mailto:info@cpchain.io'
           },
           { label: 'MEWtopia', link: 'https://www.mewtopia.com/' },
           { label: 'Press Kit', routerLink: 'PressKit' },

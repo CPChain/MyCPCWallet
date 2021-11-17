@@ -20,7 +20,7 @@
       :footer="{
         text: 'Need help?',
         linkTitle: 'Contact support',
-        link: 'mailto:support@myetherwallet.com'
+        link: 'mailto:info@cpchain.io'
       }"
       :title="$t('interface.address-book.add-addr')"
       :show-overlay="addMode"

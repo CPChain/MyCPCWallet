@@ -259,7 +259,7 @@
       :footer="{
         text: 'Need help?',
         linkTitle: 'Contact support',
-        link: 'mailto:support@myetherwallet.com'
+        link: 'mailto:info@cpchain.io'
       }"
       :show-overlay="showSignOverlay"
       :title="title ? title : 'Message'"

@@ -19,18 +19,18 @@
     =====================================================================================
     -->
       <div style="max-width: 650px" class="mx-auto">
-        <a href="https://www.mewwallet.com/" target="_blank">
+        <a href="https://cpchain.io/#/downloadApp" target="_blank">
           <mew-button class="mb-5" color-theme="white" style="height: 160px">
             <div class="px-2 textDark--text text-left d-flex align-center">
               <div>
                 <div class="mb-2 d-flex align-center">
-                  <div class="mew-heading-2">Get MEW wallet app</div>
+                  <div class="mew-heading-2">Get CPChain wallet app</div>
                   <v-icon dense color="primary" class="ml-1">
                     mdi-shield-check
                   </v-icon>
                 </div>
                 <div class="break-word">
-                  Download our official app and connect to MEW web using your
+                  Download our official app and connect to CPChain mainnet using your
                   mobile phone. Available on iOS and Android.
                 </div>
               </div>

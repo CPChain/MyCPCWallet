@@ -1,6 +1,6 @@
 // import NameResolver from '../index';
-import Web3 from 'web3';
-const web3Instance = new Web3('https://nodes.mewapi.io/rpc/eth');
+// import Web3 from 'web3';
+// const web3Instance = new Web3('https://nodes.mewapi.io/rpc/eth');
 // const nameResolver = new NameResolver(
 //   {
 //     type: {
@@ -15,11 +15,11 @@ const web3Instance = new Web3('https://nodes.mewapi.io/rpc/eth');
 // );
 
 describe('Ethereum Name Resolver', () => {
-  // test('it should ens name: myetherwallet.eth', () => {
-  //   return nameResolver.resolveName('myetherwallet.eth').then(addr => {
-  //     expect(addr).toBe('0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D');
-  //   });
-  // });
+  test('it should ens name: myetherwallet.eth', () => {
+    // return nameResolver.resolveName('myetherwallet.eth').then(addr => {
+    //   expect(addr).toBe('0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D');
+    // });
+  });
   // test('it should cns name: myetherwallet.crypto', () => {
   //   return nameResolver.resolveName('myetherwallet.crypto').then(addr => {
   //     expect(addr).toBe('0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D');

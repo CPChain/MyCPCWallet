@@ -15,7 +15,7 @@
     =====================================================================================
     -->
     <div class="textPrimary--text mb-8">
-      To receive ETH from another account, send ETH from that account to this
+      To receive CPC from another account, send CPC from that account to this
       address.
     </div>
 

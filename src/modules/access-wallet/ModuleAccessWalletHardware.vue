@@ -220,27 +220,27 @@ export default {
           label: 'Ledger',
           icon: require('@/assets/images/icons/hardware-wallets/icon-ledger.svg'),
           type: WALLET_TYPES.LEDGER
-        },
-        {
-          label: 'Trezor',
-          icon: require('@/assets/images/icons/hardware-wallets/icon-trezor.svg'),
-          type: WALLET_TYPES.TREZOR
-        },
-        {
-          label: 'KeepKey',
-          icon: require('@/assets/images/icons/hardware-wallets/icon-keepkey.svg'),
-          type: WALLET_TYPES.KEEPKEY
-        },
-        {
-          label: 'BitBox02',
-          icon: require('@/assets/images/icons/hardware-wallets/icon-bitbox.svg'),
-          type: WALLET_TYPES.BITBOX2
-        },
-        {
-          label: 'CoolWallet',
-          icon: require('@/assets/images/icons/hardware-wallets/icon-coolwallet.svg'),
-          type: WALLET_TYPES.COOL_WALLET
         }
+        // {
+        //   label: 'Trezor',
+        //   icon: require('@/assets/images/icons/hardware-wallets/icon-trezor.svg'),
+        //   type: WALLET_TYPES.TREZOR
+        // },
+        // {
+        //   label: 'KeepKey',
+        //   icon: require('@/assets/images/icons/hardware-wallets/icon-keepkey.svg'),
+        //   type: WALLET_TYPES.KEEPKEY
+        // },
+        // {
+        //   label: 'BitBox02',
+        //   icon: require('@/assets/images/icons/hardware-wallets/icon-bitbox.svg'),
+        //   type: WALLET_TYPES.BITBOX2
+        // },
+        // {
+        //   label: 'CoolWallet',
+        //   icon: require('@/assets/images/icons/hardware-wallets/icon-coolwallet.svg'),
+        //   type: WALLET_TYPES.COOL_WALLET
+        // }
       ],
       ledgerApps: appPaths.map(item => {
         return {

@@ -19,7 +19,7 @@
       <v-row class="align-center justify-space-between">
         <v-col cols="12" md="7">
           <div class="mb-0 text-center text-md-left">
-            ©2021 MyEtherWallet. All rights reserved. Pricing taken from
+            ©2022 CPChain Web Wallet. All rights reserved. Pricing taken from
             <a
               class="titlePrimary--text text-decoration--none"
               href="https://www.coingecko.com/en"
@@ -47,7 +47,7 @@
           >
             <a
               class="black--text"
-              href="https://help.myetherwallet.com/en/"
+              href="https://docs.cpchain.io"
               target="_blank"
               >Help Center</a
             >

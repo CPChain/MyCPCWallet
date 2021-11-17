@@ -5,7 +5,7 @@
         <template #slide1>
           <a :href="mobileOrWebLink()" target="_blank">
             <div class="ad1 px-5 d-flex flex-column justify-center">
-              <div class="title font-weight-bold mb-n1">MEW wallet App</div>
+              <div class="title font-weight-bold mb-n1">CPChain wallet App</div>
               <div class="mb-2">Download it today!</div>
               <div class="d-flex align-center pb-3">
                 <img
@@ -76,11 +76,11 @@ export default {
   methods: {
     mobileOrWebLink() {
       if (platform.os.family.includes('iOS')) {
-        return 'https://apps.apple.com/app/id1464614025';
+        return 'https://apps.apple.com/us/app/cpc-wallet/id1486125576';
       } else if (platform.os.family.includes('Android')) {
-        return 'https://play.google.com/store/apps/details?id=com.myetherwallet.mewwallet';
+        return 'https://play.google.com/store/apps/details?id=com.cpcwallet';
       }
-      return 'https://www.mewwallet.com/';
+      return 'https://cpchain.io/#/downloadApp';
     }
   }
 };

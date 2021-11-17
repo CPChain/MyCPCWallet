@@ -216,7 +216,7 @@ import dashboard from '@/assets/images/icons/icon-dashboard-enable.png';
 import send from '@/assets/images/icons/icon-send-enable.png';
 import nft from '@/assets/images/icons/icon-nft.png';
 import swap from '@/assets/images/icons/icon-swap-enable.png';
-import dapp from '@/assets/images/icons/icon-dapp-center-enable.png';
+// import dapp from '@/assets/images/icons/icon-dapp-center-enable.png';
 import contract from '@/assets/images/icons/icon-contract-enable.png';
 import message from '@/assets/images/icons/icon-message-enable.png';
 import settings from '@/assets/images/icons/icon-setting-enable.png';
@@ -266,12 +266,12 @@ export default {
           route: { name: ROUTES_WALLET.SWAP.NAME },
           icon: swap
         },
-        {
-          title: this.$t('interface.menu.dapps'),
-          route: { name: ROUTES_WALLET.DAPPS.NAME },
-          icon: dapp,
-          hasNew: true
-        },
+        // {
+        //   title: this.$t('interface.menu.dapps'),
+        //   route: { name: ROUTES_WALLET.DAPPS.NAME },
+        //   icon: dapp,
+        //   hasNew: true
+        // },
         {
           title: this.$t('interface.menu.contract'),
           icon: contract,

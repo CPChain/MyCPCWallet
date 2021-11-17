@@ -1,17 +1,13 @@
 <template>
   <div class="d-flex align-center py-4 px-1">
     <div class="d-flex align-center">
-      <img class="ml-2 mr-3" src="@/assets/images/icons/icon-puppy-mew.svg" />
+      <!-- <img class="ml-2 mr-3" src="@/assets/images/icons/icon-puppy-mew.svg" /> -->
       <div>
-        <div class="font-weight-bold">MEWtopia</div>
+        <div class="font-weight-bold">CPChain</div>
         <div>
-          Getting started on Ethereum? Visit our blog MEWtopia for tips,
-          resources and guides.
-          <a
-            href="https://www.mewtopia.com/tag/getting-started/"
-            rel="noopener noreferrer"
-            target="_blank"
-            >Read...</a
+          A new distributed infrastructure for next generation IoT.
+          <a href="https://cpchain.io" rel="noopener noreferrer" target="_blank"
+            >More...</a
           >
         </div>
       </div>

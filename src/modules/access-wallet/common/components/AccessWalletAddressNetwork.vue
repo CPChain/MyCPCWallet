@@ -471,6 +471,7 @@ export default {
         this.accountAddress = accountsArray[0].address;
         this.accounts = accountsArray;
       } catch (e) {
+        console.error(e);
         Toast(e, {}, ERROR);
       }
     },

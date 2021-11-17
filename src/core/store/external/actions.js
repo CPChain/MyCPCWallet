@@ -1,5 +1,6 @@
 import { Toast, ERROR } from '@/modules/toast/handler/handlerToast';
-import { ETH, BSC, MATIC } from '@/utils/networks/types';
+import { ETH, BSC, MATIC, CPC } from '@/utils/networks/types';
+import Web3 from 'web3';
 import { MAIN_TOKEN_ADDRESS } from '@/core/helpers/common';
 import BigNumber from 'bignumber.js';
 import {

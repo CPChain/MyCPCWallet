@@ -1,8 +1,8 @@
 import { CPC } from '../types';
 export default {
   type: CPC,
-  service: 'myetherwallet.com-ws',
-  url: 'wss://nodes.mewapi.io/ws/eth',
+  service: 'cpchain.io',
+  url: 'https://civilian.cpchain.io',
   port: 443,
   auth: false,
   username: '',

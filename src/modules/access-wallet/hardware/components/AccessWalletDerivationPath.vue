@@ -265,6 +265,7 @@ export default {
           Toast('Custom path is not valid', {}, ERROR);
         }
       } catch (error) {
+        console.error(error);
         Toast(error, {}, ERROR);
       }
     }

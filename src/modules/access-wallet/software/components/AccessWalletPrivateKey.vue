@@ -63,7 +63,7 @@ export default {
       acceptTerms: false,
       link: {
         title: 'Terms',
-        url: 'https://www.myetherwallet.com/terms-of-service'
+        url: 'https://wallet.cpchain.io/terms-of-service'
       }
     };
   },

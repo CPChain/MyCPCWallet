@@ -9,4 +9,4 @@ import MATIC from './MATIC.js';
 import GO from './GO.js';
 import CPC from './CPC.js';
 
-export { ETH, GOERLI, ETC, KOV, RIN, ROP, BSC, MATIC, GO, CPC };
+export { CPC, ETH, GOERLI, ETC, KOV, RIN, ROP, BSC, MATIC, GO };

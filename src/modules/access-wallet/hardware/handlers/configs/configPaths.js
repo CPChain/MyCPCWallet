@@ -1,3 +1,7 @@
+const cpchain = {
+  path: "m/44'/337'/0'/0",
+  label: 'CPChain'
+};
 const ethereum = {
   path: "m/44'/60'/0'/0",
   label: 'Ethereum'
@@ -87,6 +91,10 @@ const iolite = {
   path: "m/44'/1171337'/0'/0",
   label: 'Iolite'
 };
+const ledgerCPChain = {
+  path: "m/44'/337'/0'",
+  label: 'CPChain'
+};
 const ledgerEthereum = {
   path: "m/44'/60'/0'",
   label: 'Ethereum'
@@ -156,8 +164,10 @@ const binanceChain = {
   label: 'Binance Chain'
 };
 export {
+  cpchain,
   ethereum,
   ethereumClassic,
+  ledgerCPChain,
   ledgerEthereum,
   ledgerLiveEthereum,
   ledgerEthereumClassic,

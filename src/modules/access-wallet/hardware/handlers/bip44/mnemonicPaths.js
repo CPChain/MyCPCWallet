@@ -1,4 +1,5 @@
 import {
+  cpchain,
   ethereum,
   ethereumClassic,
   ropsten,
@@ -35,6 +36,7 @@ const renamedLedger = Object.assign({}, ledgerEthereum);
 renamedLedger.label = 'Ledger';
 
 export default [
+  cpchain,
   ethereum,
   ethereumClassic,
   ropsten,

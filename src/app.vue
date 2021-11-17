@@ -3,7 +3,7 @@
     <router-view />
     <module-toast />
     <module-global-modals />
-    <module-analytics />
+    <!-- <module-analytics /> -->
   </v-app>
 </template>
 
@@ -11,7 +11,7 @@
 import { mapActions, mapState } from 'vuex';
 import ModuleToast from '@/modules/toast/ModuleToast.vue';
 import ModuleGlobalModals from '@/modules/global-modals/ModuleGlobalModals';
-import ModuleAnalytics from '@/modules/analytics-opt-in/ModuleAnalytics';
+// import ModuleAnalytics from '@/modules/analytics-opt-in/ModuleAnalytics';
 import currencyTypes from '@/core/configs/configCurrencyTypes';
 import { PWA_EVENTS } from '@/core/helpers/common';
 import {
@@ -22,7 +22,7 @@ import {
 } from '@/modules/toast/handler/handlerToast';
 export default {
   name: 'App',
-  components: { ModuleToast, ModuleGlobalModals, ModuleAnalytics },
+  components: { ModuleToast, ModuleGlobalModals /*ModuleAnalytics*/ },
   computed: {
     ...mapState('custom', ['addressBook']),
     ...mapState('addressBook', ['isMigrated'])

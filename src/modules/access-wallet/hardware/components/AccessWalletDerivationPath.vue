@@ -164,8 +164,8 @@ export default {
       type: Object,
       default: () => {
         return {
-          name: 'Ethereum',
-          value: "m/44'/60'/0'/0"
+          name: 'CPChain',
+          value: "m/44'/337'/0'/0"
         };
       }
     }

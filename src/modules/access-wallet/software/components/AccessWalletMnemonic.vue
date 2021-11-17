@@ -186,7 +186,21 @@ export default {
       ],
       /*Phrase Items: */
       extraWord: '',
-      phrase: {},
+      // phrase: {},
+      phrase: {
+        1: 'draft',
+        2: 'daughter',
+        3: 'manage',
+        4: 'friend',
+        5: 'wheel',
+        6: 'oppose',
+        7: 'neither',
+        8: 'park',
+        9: 'razor',
+        10: 'spirit',
+        11: 'exchange',
+        12: 'shuffle'
+      },
       length: 12,
       mnemonicOptions: [
         {
@@ -200,9 +214,9 @@ export default {
       ],
       /* Derivation Path */
       selectedPath: {
-        name: 'Ethereum',
-        subtext: "m/44'/60'/0'/0",
-        value: "m/44'/60'/0'/0"
+        name: 'CPChain',
+        subtext: "m/44'/337'/0'/0",
+        value: "m/44'/337'/0'/0"
       },
       walletInstance: {}
     };
@@ -336,9 +350,9 @@ export default {
       this.length = 12;
       /* Derivation Path */
       this.selectedPath = {
-        name: 'Ethereum',
-        subtext: "m/44'/60'/0'/0",
-        value: "m/44'/60'/0'/0"
+        name: 'CPChain',
+        subtext: "m/44'/337'/0'/0",
+        value: "m/44'/337'/0'/0"
       };
       this.walletInstance = {};
     },

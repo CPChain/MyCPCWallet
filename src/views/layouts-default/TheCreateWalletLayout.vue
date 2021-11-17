@@ -30,8 +30,8 @@
                   </v-icon>
                 </div>
                 <div class="break-word">
-                  Download our official app and connect to CPChain mainnet using your
-                  mobile phone. Available on iOS and Android.
+                  Download our official app and connect to CPChain mainnet using
+                  your mobile phone. Available on iOS and Android.
                 </div>
               </div>
               <div class="d-none d-sm-block pl-5">

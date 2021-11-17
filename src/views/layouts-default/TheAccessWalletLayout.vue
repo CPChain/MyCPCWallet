@@ -138,33 +138,33 @@ export default {
       },
       buttons: [
         /* MEW wallet Button */
-        {
-          color: 'white',
-          title: 'MEW wallet',
-          subtitle: 'Connect MEW wallet app to MEW web',
-          note: '',
-          rightIcon: require('@/assets/images/icons/icon-mew-wallet.png'),
-          titleIcon: 'mdi-shield-check',
-          titleIconType: 'mdi',
-          titleIconClass: 'primary',
-          fn: () => {
-            this.openMEWconnect();
-          }
-        },
+        // {
+        //   color: 'white',
+        //   title: 'MEW wallet',
+        //   subtitle: 'Connect MEW wallet app to MEW web',
+        //   note: '',
+        //   rightIcon: require('@/assets/images/icons/icon-mew-wallet.png'),
+        //   titleIcon: 'mdi-shield-check',
+        //   titleIconType: 'mdi',
+        //   titleIconClass: 'primary',
+        //   fn: () => {
+        //     this.openMEWconnect();
+        //   }
+        // },
         /* Browser Extension */
-        {
-          color: 'white',
-          title: 'Browser Extension',
-          subtitle: 'Use your web3 wallet with MEW.',
-          note: '',
-          rightIcon: require('@/assets/images/icons/icon-mew-cx.png'),
-          titleIcon: 'mdi-shield-check',
-          titleIconType: 'mdi',
-          titleIconClass: 'primary',
-          fn: () => {
-            this.openWeb3Wallet();
-          }
-        },
+        // {
+        //   color: 'white',
+        //   title: 'Browser Extension',
+        //   subtitle: 'Use your web3 wallet with MEW.',
+        //   note: '',
+        //   rightIcon: require('@/assets/images/icons/icon-mew-cx.png'),
+        //   titleIcon: 'mdi-shield-check',
+        //   titleIconType: 'mdi',
+        //   titleIconClass: 'primary',
+        //   fn: () => {
+        //     this.openWeb3Wallet();
+        //   }
+        // },
         /* Hardware Wallet */
         {
           color: 'white',
@@ -180,22 +180,22 @@ export default {
           }
         },
         /* Mobile Apps */
-        {
-          color: 'white',
-          title: 'Mobile Apps',
-          subtitle: 'WalletConnect, WalletLink',
-          note: '',
-          rightIcons: [
-            require('@/assets/images/icons/icon-wallet-connect.svg'),
-            require('@/assets/images/icons/icon-wallet-link.png')
-          ],
-          titleIcon: 'mdi-shield-check',
-          titleIconType: 'mdi',
-          titleIconClass: 'primary',
-          fn: () => {
-            this.openOverlay(ACCESS_VALID_OVERLAYS.MOBILE);
-          }
-        },
+        // {
+        //   color: 'white',
+        //   title: 'Mobile Apps',
+        //   subtitle: 'WalletConnect, WalletLink',
+        //   note: '',
+        //   rightIcons: [
+        //     require('@/assets/images/icons/icon-wallet-connect.svg'),
+        //     require('@/assets/images/icons/icon-wallet-link.png')
+        //   ],
+        //   titleIcon: 'mdi-shield-check',
+        //   titleIconType: 'mdi',
+        //   titleIconClass: 'primary',
+        //   fn: () => {
+        //     this.openOverlay(ACCESS_VALID_OVERLAYS.MOBILE);
+        //   }
+        // },
         /* Software */
         {
           color: 'white',

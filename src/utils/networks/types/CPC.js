@@ -7,7 +7,7 @@ export default {
   homePage: 'https://cpchain.io',
   blockExplorerTX: 'https://cpchain.io/#/explorer/tx/[[txHash]]',
   blockExplorerAddr: 'https://cpchain.io/#/explorer/address/[[address]]',
-  chainID: 337,
+  chainID: 1,
   tokens: [],
   contracts: [],
   isTestNetwork: false,

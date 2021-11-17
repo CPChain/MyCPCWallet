@@ -18,7 +18,7 @@ export default {
   name: 'TheDefaultView',
   components: {
     TheDefaultHeader,
-    TheDefaultFooter,
+    TheDefaultFooter
     // TheDefaultWalletBanner
   }
 };

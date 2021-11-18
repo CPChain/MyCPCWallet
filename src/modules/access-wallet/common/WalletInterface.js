@@ -19,6 +19,9 @@ import commonGenerator from '@/core/helpers/commonGenerator';
 import { Transaction, FeeMarketEIP1559Transaction } from '@ethereumjs/tx';
 import { toChecksumAddress } from '@/core/helpers/addressUtils';
 import store from '@/core/store';
+import { reject } from 'underscore';
+import * as ethers from '@/lib/cpchain.min.js';
+
 class WalletInterface {
   constructor(key, isPub = false, identifier, nick, keystore) {
     this.nickname = nick !== null && nick !== '' ? nick : '';
@@ -97,6 +100,33 @@ class WalletInterface {
       throw new Error('public key only wallets needs a signer');
     if (!this.isPubOnly) {
       return new Promise(resolve => {
+        // TODO Support CPChain
+        if (txParams.chainId === 337) {
+          const wallet = new ethers.Wallet(this.privateKey);
+          const tx = {
+            type: 0,
+            nonce: txParams.nonce,
+            to: txParams.to,
+            value: txParams.value,
+            gas: txParams.gas,
+            gasPrice: txParams.gasPrice,
+            input: txParams.data,
+            chainId: 337
+          };
+          wallet
+            .signCPCTransaction(tx)
+            .then(signedTx => {
+              resolve({
+                rawTransaction: signedTx,
+                tx: tx
+              });
+            })
+            .catch(err => {
+              reject(err);
+            });
+          return;
+        }
+
         let tx = Transaction.fromTxData(txParams, {
           common: commonGenerator(store.getters['global/network'])
         });

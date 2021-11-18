@@ -14,6 +14,7 @@ import store from '@/core/store';
 import commonGenerator from '@/core/helpers/commonGenerator';
 import toBuffer from '@/core/helpers/toBuffer';
 import Vue from 'vue';
+import * as ethers from '@/lib/cpchain.min.js';
 
 const bip39 = require('bip39');
 const NEED_PASSWORD = true;
@@ -44,8 +45,28 @@ class MnemonicWallet {
     );
   }
   getAccount(idx) {
+    // TODO Support CPChain
     const derivedKey = this.hdKey.derive(this.basePath + '/' + idx);
     const txSigner = async txParams => {
+      if (txParams.chainId === 337) {
+        const wallet = new ethers.Wallet(derivedKey.privateKey);
+        const tx = {
+          type: 0,
+          nonce: txParams.nonce,
+          to: txParams.to,
+          value: txParams.value,
+          gas: txParams.gas,
+          gasPrice: txParams.gasPrice,
+          input: txParams.data,
+          chainId: 337
+        };
+        const signedTx = await wallet.signCPCTransaction(tx);
+        console.log('----->>>>>>343535', wallet.address, signedTx);
+        return {
+          rawTransaction: signedTx,
+          tx: tx
+        };
+      }
       let tx = Transaction.fromTxData(txParams, {
         common: commonGenerator(store.getters['global/network'])
       });

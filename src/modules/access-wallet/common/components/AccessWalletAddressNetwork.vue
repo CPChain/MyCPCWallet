@@ -380,6 +380,7 @@ export default {
       const wallet = this.accounts.find(item => {
         return item.address === this.selectedAddress;
       });
+      console.log('----->>>>>>0000', wallet);
       if (wallet) {
         wallet.account.isHardware = true;
         return wallet.account;
@@ -470,6 +471,7 @@ export default {
         this.selectedAddress = accountsArray[0].address;
         this.accountAddress = accountsArray[0].address;
         this.accounts = accountsArray;
+        console.log('------>>>>>accounts', this.accounts);
       } catch (e) {
         console.error(e);
         Toast(e, {}, ERROR);

@@ -10,12 +10,13 @@ const WalletErrorHandler = (errors, warnings) => {
   const errorValues = Object.keys(errors);
   const warningValues = Object.keys(warnings);
   return err => {
+    console.error(err);
     const foundError = errorValues.find(item => {
       const message = err.message?.message || err.message;
-      return message.includes(item);
+      return message && message.includes(item);
     });
     const foundWarning = warningValues.find(item => {
-      return err.message.includes(item);
+      return err.message && err.message.includes(item);
     });
     if (foundError) {
       Toast(Vue.$i18n.t(errors[foundError]), {}, ERROR);

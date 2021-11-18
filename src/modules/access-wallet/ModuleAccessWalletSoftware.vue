@@ -234,6 +234,7 @@ export default {
         const wallet = !account
           ? this.accessHandler.getWalletInstance()
           : account;
+        console.log('------>>>>>>>99999', wallet);
         this.setWallet([wallet])
           .then(() => {
             if (this.switchAddress) {

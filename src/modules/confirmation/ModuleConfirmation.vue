@@ -47,7 +47,7 @@
                 target="_blank"
                 :href="links.etherscan"
                 class="d-flex justify-center justify-sm-start"
-                >View on Etherscan
+                >View on CPChain Explorer
                 <v-icon color="primary" small>mdi-launch</v-icon></a
               >
             </v-col>
@@ -474,8 +474,8 @@ export default {
      */
     successBodyText() {
       return this.showSuccessSwap
-        ? 'Once completed, the token amount will be deposited to your wallet. This should take a few minutes depending on how congested the Ethereum network is.'
-        : 'Once completed, the token amount will be deposited to the address you provided. This should take a few minutes depending on how congested the Ethereum network is.';
+        ? 'Once completed, the token amount will be deposited to your wallet. This should take a few minutes depending on how congested the CPChain network is.'
+        : 'Once completed, the token amount will be deposited to the address you provided. This should take a few minutes depending on how congested the CPChain network is.';
     },
     /**
      * Property returns string, depending whether or not this is a swap or send
@@ -744,6 +744,7 @@ export default {
       this.showSuccessModal = true;
     },
     async signTx() {
+      // Sign tx
       this.error = '';
       if (this.isNotSoftware) {
         this.signing = true;
@@ -775,6 +776,7 @@ export default {
             this.error = e.message;
             this.signing = false;
             this.instance.errorHandler(e.message);
+            console.error(e);
           });
       }
     },

@@ -42,14 +42,14 @@
               >
             </v-col>
             <v-col cols="12" sm="auto" class="pb-2">
-              <a
+              <!-- <a
                 rel="noopener noreferrer"
                 target="_blank"
                 :href="links.etherscan"
                 class="d-flex justify-center justify-sm-start"
                 >View on CPChain Explorer
                 <v-icon color="primary" small>mdi-launch</v-icon></a
-              >
+              > -->
             </v-col>
             <v-col
               v-if="network.type.isEthVMSupported.supported"

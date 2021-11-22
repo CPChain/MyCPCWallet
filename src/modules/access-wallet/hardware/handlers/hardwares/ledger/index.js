@@ -246,7 +246,11 @@ class ledgerWallet {
             (0, bnToUnpaddedBuffer)(r),
             (0, bnToUnpaddedBuffer)(s)
           ]);
-          console.log('---->>>>', rawTransaction.length, rawTransaction.toString('hex'));
+          console.log(
+            '---->>>>',
+            rawTransaction.length,
+            rawTransaction.toString('hex')
+          );
           const hash = bufferToHex((0, rlphash)(raw));
           console.log('----->>>>final', bufferToHex(rawTransaction), hash);
           return {

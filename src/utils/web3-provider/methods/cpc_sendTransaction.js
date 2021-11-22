@@ -1,5 +1,4 @@
 import utils from 'web3-utils';
-import EthCalls from '../web3Calls';
 import WALLET_TYPES from '@/modules/access-wallet/common/walletTypes';
 import EventNames from '../events';
 import { toPayload } from '../jsonrpc';
@@ -10,11 +9,7 @@ import sanitizeHex from '@/core/helpers/sanitizeHex';
 import { MAIN_TOKEN_ADDRESS } from '@/core/helpers/common';
 import { EventBus } from '@/core/plugins/eventBus';
 
-export default async (
-  { payload, store, requestManager, cpchainProvider },
-  res,
-  next
-) => {
+export default async ({ payload, store, cpchainProvider }, res, next) => {
   if (payload.method !== 'eth_sendTransaction') return next();
   const tx = Object.assign({}, payload.params[0]);
   let confirmInfo;
@@ -42,7 +37,6 @@ export default async (
   delete localTx['nonce'];
   delete localTx['gasPrice'];
   tx.value = tx.value === '' || tx.value === '0x' ? '0' : tx.value;
-  const ethCalls = new EthCalls(requestManager);
   try {
     tx.nonce = !tx.nonce
       ? await cpchainProvider.getTransactionCount(
@@ -52,7 +46,13 @@ export default async (
     if (tx.gasLimit) {
       tx.gas = tx.gasLimit;
     }
-    tx.gas = !tx.gas ? await ethCalls.estimateGas(localTx) : tx.gas;
+    tx.gas = !tx.gas
+      ? await cpchainProvider.estimateGas({
+          to: tx.to,
+          data: tx.data,
+          value: tx.value
+        })
+      : tx.gas;
     tx.gasLimit = tx.gas;
   } catch (e) {
     res(e);

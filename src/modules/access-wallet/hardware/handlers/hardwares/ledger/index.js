@@ -99,7 +99,9 @@ class ledgerWallet {
     }
     const txSigner = async txParams => {
       const networkId = store.getters['global/network'].type.chainID;
-      const tokenInfo = byContractAddressAndChainId(txParams.to, networkId);
+      const tokenInfo = txParams.to
+        ? byContractAddressAndChainId(txParams.to, networkId)
+        : null;
       if (tokenInfo) await this.ledger.provideERC20TokenInformation(tokenInfo);
       const legacySigner = async _txParams => {
         // TODO Support CPChain
@@ -111,12 +113,24 @@ class ledgerWallet {
           const value = new BN(
             (0, toBuffer)(_txParams.value === '' ? '0x' : _txParams.value)
           );
+          let gasLimit = null;
+          console.log('------>>>>gaslimit', _txParams.gasLimit);
+          if (typeof _txParams.gasLimit === 'object') {
+            // Big Number
+            const sLimit = _txParams.gasLimit.toString();
+            const limit = new BN(sLimit);
+            console.log('---->>>>gasLimit2', limit);
+            gasLimit = (0, bnToUnpaddedBuffer)(limit);
+          } else {
+            // hex string
+            gasLimit = (0, toBuffer)(_txParams.gasLimit);
+          }
           const raw = [
             (0, bnToUnpaddedBuffer)(new BN(0)),
             (0, toBuffer)(_txParams.nonce),
             (0, toBuffer)(_txParams.gasPrice),
-            (0, toBuffer)(_txParams.gasLimit),
-            (0, toBuffer)(_txParams.to),
+            gasLimit,
+            (0, toBuffer)(_txParams.to ? _txParams.to : '0x'),
             (0, bnToUnpaddedBuffer)(value),
             txdata,
             (0, bnToUnpaddedBuffer)(new BN(337)), // chainId
@@ -238,8 +252,8 @@ class ledgerWallet {
             (0, bnToUnpaddedBuffer)(new BN(0)),
             (0, toBuffer)(_txParams.nonce),
             (0, toBuffer)(_txParams.gasPrice),
-            (0, toBuffer)(_txParams.gasLimit),
-            (0, toBuffer)(_txParams.to),
+            gasLimit,
+            (0, toBuffer)(_txParams.to ? _txParams.to : '0x'),
             (0, bnToUnpaddedBuffer)(value),
             txdata,
             (0, bnToUnpaddedBuffer)(v),

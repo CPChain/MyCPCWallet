@@ -37,7 +37,7 @@
               <div class="d-none d-sm-block pl-5">
                 <img
                   class="mew-wallet-img"
-                  src="@/assets/images/snippets/bg-mew-wallet.png"
+                  src="@/assets/images/snippets/bg-cpc-wallet.png"
                   alt="MEWwallet"
                   style="height: 140px; margin-top: 20px; margin-bottom: -3px"
                 />

@@ -95,7 +95,7 @@ export default {
 }
 .ad1 {
   height: 100%;
-  background: url('~@/assets/images/snippets/bg-mew-wallet.png');
+  background: url('~@/assets/images/snippets/bg-cpc-wallet.png');
   background-size: 130px;
   background-position: right -10px bottom -10px;
   background-repeat: no-repeat;

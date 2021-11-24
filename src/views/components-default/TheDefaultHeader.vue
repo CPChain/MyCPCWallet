@@ -24,7 +24,7 @@
           <router-link :to="{ name: ROUTES_HOME.HOME.NAME, query: {} }">
             <v-img
               :class="$vuetify.breakpoint.smAndDown ? 'mx-auto' : ''"
-              src="@/assets/images/icons/logo-mew.svg"
+              src="@/assets/images/icons/logo-cpc.svg"
               max-height="36"
               max-width="130"
             />

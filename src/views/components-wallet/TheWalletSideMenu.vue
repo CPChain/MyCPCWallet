@@ -12,7 +12,7 @@
         <div class="pa-5 pb-3">
           <div class="mt-2 mb-4 d-flex align-center justify-space-between">
             <router-link :to="{ name: ROUTES_WALLET.DASHBOARD.NAME }">
-              <img width="120" src="@/assets/images/icons/logo-mew.svg" />
+              <img width="120" src="@/assets/images/icons/logo-cpc.svg" />
             </router-link>
             <!--
             =====================================================================================
@@ -199,7 +199,7 @@
           :to="{ name: ROUTES_WALLET.DASHBOARD.NAME }"
           style="line-height: 0"
         >
-          <img height="26" src="@/assets/images/icons/logo-mew.svg" />
+          <img height="26" src="@/assets/images/icons/logo-cpc.svg" />
         </router-link>
         <v-spacer />
         <module-notifications invert-icon />

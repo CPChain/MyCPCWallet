@@ -1,4 +1,4 @@
-import eth from '@/assets/images/networks/eth.svg';
+import cpchain from '@/assets/images/networks/cpchain.svg';
 
 export default {
   name: 'CPC',
@@ -17,7 +17,7 @@ export default {
   //   supportedTld: GOERLI,
   //   subgraphPath: 'https://api.thegraph.com/subgraphs/name/ensdomains/ens'
   // },
-  icon: eth,
+  icon: cpchain,
   currencyName: 'CPC',
   isEthVMSupported: {
     supported: false,

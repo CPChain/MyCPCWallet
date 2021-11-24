@@ -45,7 +45,7 @@
           </div>
         </v-card>
         <img
-          src="@/assets/images/backgrounds/bg-home-spaceman-and-dog.svg"
+          src="@/assets/images/backgrounds/bg-home-woman.png"
           alt="Spaceman and his dog"
           height="500"
         />

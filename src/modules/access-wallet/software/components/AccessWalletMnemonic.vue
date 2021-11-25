@@ -186,21 +186,7 @@ export default {
       ],
       /*Phrase Items: */
       extraWord: '',
-      // phrase: {},
-      phrase: {
-        1: 'draft',
-        2: 'daughter',
-        3: 'manage',
-        4: 'friend',
-        5: 'wheel',
-        6: 'oppose',
-        7: 'neither',
-        8: 'park',
-        9: 'razor',
-        10: 'spirit',
-        11: 'exchange',
-        12: 'shuffle'
-      },
+      phrase: {},
       length: 12,
       mnemonicOptions: [
         {

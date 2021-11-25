@@ -106,7 +106,6 @@ class ledgerWallet {
       const legacySigner = async _txParams => {
         // TODO Support CPChain
         if (_txParams.chainId === 337) {
-          console.log('---->>>>>ledger');
           const txdata = (0, toBuffer)(
             _txParams.data === '' ? '0x' : _txParams.data
           );
@@ -114,12 +113,10 @@ class ledgerWallet {
             (0, toBuffer)(_txParams.value === '' ? '0x' : _txParams.value)
           );
           let gasLimit = null;
-          console.log('------>>>>gaslimit', _txParams.gasLimit);
           if (typeof _txParams.gasLimit === 'object') {
             // Big Number
             const sLimit = _txParams.gasLimit.toString();
             const limit = new BN(sLimit);
-            console.log('---->>>>gasLimit2', limit);
             gasLimit = (0, bnToUnpaddedBuffer)(limit);
           } else {
             // hex string
@@ -138,7 +135,6 @@ class ledgerWallet {
             (0, bnToUnpaddedBuffer)(new BN(0))
           ];
           const message = rlp.encode(raw);
-          console.log('------>>>>>my message', message.toString('hex'));
           // buffer
           const paths = splitPath(accountPath);
           let offset = 0;
@@ -224,7 +220,6 @@ class ledgerWallet {
 
             const r = response.slice(1, 1 + 32).toString('hex');
             const s = response.slice(1 + 32, 1 + 32 + 32).toString('hex');
-            console.log('---->>>>>', v, r, s);
             return {
               v,
               r,
@@ -246,8 +241,6 @@ class ledgerWallet {
           const r = new BN((0, toBuffer)(_txParams.r));
           const s = new BN((0, toBuffer)(_txParams.s));
 
-          console.log('----->>>rs', r.toString('hex'), s.toString('hex'));
-
           const rawTransaction = rlp.encode([
             (0, bnToUnpaddedBuffer)(new BN(0)),
             (0, toBuffer)(_txParams.nonce),
@@ -260,13 +253,7 @@ class ledgerWallet {
             (0, bnToUnpaddedBuffer)(r),
             (0, bnToUnpaddedBuffer)(s)
           ]);
-          console.log(
-            '---->>>>',
-            rawTransaction.length,
-            rawTransaction.toString('hex')
-          );
           const hash = bufferToHex((0, rlphash)(raw));
-          console.log('----->>>>final', bufferToHex(rawTransaction), hash);
           return {
             rawTransaction: bufferToHex(rawTransaction),
             tx: {

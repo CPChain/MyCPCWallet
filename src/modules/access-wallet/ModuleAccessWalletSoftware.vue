@@ -234,7 +234,6 @@ export default {
         const wallet = !account
           ? this.accessHandler.getWalletInstance()
           : account;
-        console.log('------>>>>>>>99999', wallet);
         this.setWallet([wallet])
           .then(() => {
             if (this.switchAddress) {
@@ -249,11 +248,9 @@ export default {
             this.trackAccessWallet(this.type);
           })
           .catch(e => {
-            console.error(e);
             Toast(e, {}, ERROR);
           });
       } catch (e) {
-        console.error(e);
         Toast(e, {}, ERROR);
       }
     },
@@ -270,7 +267,6 @@ export default {
             query: { type: SOFTWARE_WALLET_TYPES.OVERVIEW }
           });
         } catch (e) {
-          console.error(e);
           Toast(e, {}, ERROR);
         }
       }
@@ -289,7 +285,6 @@ export default {
             query: { type: newType }
           });
         } catch (e) {
-          console.error(e);
           Toast(e, {}, ERROR);
         }
       } else {

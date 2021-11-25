@@ -117,7 +117,7 @@ export default {
         textDark: '#192133',
         textMedium: '#5A678A',
         textLight: '#939FB9',
-        greyPrimary:'#5A678A',
+        greyPrimary: '#5A678A',
         greyMedium: '#D7DAE3',
         greyLight: '#F2F3F6',
         greenPrimary: '#05C0A5',

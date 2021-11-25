@@ -58,7 +58,6 @@ class CustomCPChainRequestManager extends Web3RequestManager {
   }
   send(data, callback) {
     const { method, params } = data;
-    console.log('---->>>>>>666', method, params);
     if (this.provider.request_) {
       this.provider
         .request_({ method, params })

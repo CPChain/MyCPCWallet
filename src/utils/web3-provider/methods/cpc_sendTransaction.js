@@ -68,7 +68,6 @@ export default async ({ payload, store, cpchainProvider }, res, next) => {
   }
   getSanitizedTx(tx)
     .then(_tx => {
-      console.log('---->>>>', tx);
       const event = confirmInfo
         ? EventNames.SHOW_SWAP_TX_MODAL
         : EventNames.SHOW_TX_CONFIRM_MODAL;

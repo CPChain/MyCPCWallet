@@ -61,7 +61,6 @@ class MnemonicWallet {
           chainId: 337
         };
         const signedTx = await wallet.signCPCTransaction(tx);
-        console.log('----->>>>>>343535', wallet.address, signedTx);
         return {
           rawTransaction: signedTx,
           tx: tx

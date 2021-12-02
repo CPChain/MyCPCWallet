@@ -1,7 +1,19 @@
+// MEW colors: https://myetherwallet.github.io/mew-components/?path=/docs/mewcolors--all
+// 采用 Ant-Design Daybreak Blue / 拂晓蓝 (https://ant.design/docs/spec/colors-cn)
 const primaryHover = '#1eb19b';
 const primary = '#05c0a5';
 const primaryActive = '#56c5b4';
 const superPrimaryHover = '#f5fdfb';
+// 首页背景色
+const expandHeader = '#002766'; // '#184f90';
+
+// 不去动代码，直接把 green 的改下
+// const greenPrimary = '#096dd9';
+// const greenMedium = '#C3F0E9';
+// const greenLight = '#EBFAF8';
+const greenPrimary = '#40a9ff';
+const greenMedium = '#91d5ff';
+const greenLight = '#e6f7ff';
 
 export default {
   icons: {
@@ -26,9 +38,9 @@ export default {
         greyPrimary: '#5A678A',
         greyMedium: '#D7DAE3',
         greyLight: '#F2F3F6',
-        greenPrimary: '#05C0A5',
-        greenMedium: '#C3F0E9',
-        greenLight: '#EBFAF8',
+        greenPrimary: greenPrimary,
+        greenMedium: greenMedium,
+        greenLight: greenLight,
         bluePrimary: '#4B83E8',
         blueMedium: '#D4E1F9',
         blueLight: '#EEF3FD',
@@ -80,7 +92,7 @@ export default {
         mewBg: '#fff',
         walletBg: '#f2f4fa',
         boxShadow: '#ececec',
-        expandHeader: '#184f90',
+        expandHeader: expandHeader,
         primary: primary,
         blue500: '#5a78f0',
         basic: '#0b1a40',
@@ -120,9 +132,9 @@ export default {
         greyPrimary: '#5A678A',
         greyMedium: '#D7DAE3',
         greyLight: '#F2F3F6',
-        greenPrimary: '#05C0A5',
-        greenMedium: '#C3F0E9',
-        greenLight: '#EBFAF8',
+        greenPrimary: greenPrimary,
+        greenMedium: greenMedium,
+        greenLight: greenLight,
         bluePrimary: '#4B83E8',
         blueMedium: '#D4E1F9',
         blueLight: '#EEF3FD',
@@ -173,7 +185,7 @@ export default {
         walletBg: '#151a29',
         black: '#000',
         boxShadow: '#3c3c3c',
-        expandHeader: '#184f90',
+        expandHeader: expandHeader,
         titlePrimary: '#95aed8',
         titleSecondary: '#4E5A6E',
         textPrimary: '#707D9E',

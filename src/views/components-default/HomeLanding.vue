@@ -121,7 +121,8 @@ export default {
 
 <style lang="scss" scoped>
 .desktop-content {
-  background-image: url(~@/assets/images/backgrounds/bg-homepage.svg);
+  // TODO 换张更好的背景图
+  // background-image: url(~@/assets/images/backgrounds/bg-homepage.svg);
   background-size: cover;
   background-position: 100% bottom;
   .banner-content-container {

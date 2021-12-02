@@ -17,3 +17,7 @@ build-image:
 run-image:
 	@echo "Preview on http://127.0.0.1:8090/"
 	@docker run -it --rm -p 8090:80 cpc-web-wallet:latest
+
+push-image:
+	@docker tag cpc-web-wallet liaojl/cpc-web-wallet
+	@docker push liaojl/cpc-web-wallet

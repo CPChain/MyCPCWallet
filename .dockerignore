@@ -1,6 +1,7 @@
 .git
 .gitignore
 node_modules
+builder-docker/node_modules
 LICENSE
 VERSION
 README.md

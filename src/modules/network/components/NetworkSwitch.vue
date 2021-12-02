@@ -306,7 +306,6 @@ export default {
           this.$emit('newNetwork');
         });
       } catch (e) {
-        console.error(e);
         Toast(`Could not switch network`, {}, ERROR);
       }
     }, 1000)

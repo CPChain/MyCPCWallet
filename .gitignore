@@ -1,6 +1,7 @@
 **/.DS_Store
 node_modules/
-/dist/
+# 不在线上（AWS Amplify）打包了，直接上线即可
+# /dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

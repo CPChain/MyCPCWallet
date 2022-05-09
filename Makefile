@@ -1,5 +1,5 @@
 
-all: prod build-image
+all: prod build-image push-image
 
 prod:
 	@npm run build

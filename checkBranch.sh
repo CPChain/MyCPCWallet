@@ -2,7 +2,7 @@
 LC_ALL=C
 
 local_branch="$(git rev-parse --abbrev-ref HEAD)"
-acceptable_branch_names="feature, feat, chore, devop, release, hotfix, ui, sentry, and translation"
+acceptable_branch_names="feature, feat, chore, devop, release, hotfix, ui, sentry, and translation, production"
 valid_branch_regex="^(feature|feat|fix|chore|devop|release|hotfix|ui|sentry|translation)\/[a-z0-9._-]+$"
 
 message="Commit rejected! Please make sure your branch name starts with any of the following: $acceptable_branch_names."
